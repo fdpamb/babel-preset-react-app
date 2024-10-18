@@ -149,7 +149,7 @@ module.exports = function (api, opts, env) {
       // Note:
       // 'loose' mode configuration must be the same for
       // * @babel/plugin-transform-class-properties
-      // * @babel/plugin-proposal-private-methods
+      // * @babel/plugin-transform-private-methods
       // * @babel/plugin-transform-private-property-in-object
       // (when they are enabled)
       [
@@ -159,7 +159,7 @@ module.exports = function (api, opts, env) {
         },
       ],
       [
-        require('@babel/plugin-proposal-private-methods').default,
+        require('@babel/plugin-transform-private-methods').default,
         {
           loose: true,
         },
@@ -171,7 +171,7 @@ module.exports = function (api, opts, env) {
         },
       ],
       // Adds Numeric Separators
-      require('@babel/plugin-proposal-numeric-separator').default,
+      require('@babel/plugin-transform-numeric-separator').default,
       // Polyfills the runtime needed for async/await, generators, and friends
       // https://babeljs.io/docs/en/babel-plugin-transform-runtime
       [
