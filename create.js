@@ -206,7 +206,7 @@ module.exports = function (api, opts, env) {
       // These can be removed once webpack has support.
       // See https://github.com/facebook/create-react-app/issues/8445#issuecomment-588512250
       require('@babel/plugin-transform-optional-chaining').default,
-      require('@babel/plugin-transform-nullish-coalescing-operato').default,
+      require('@babel/plugin-transform-nullish-coalescing-operator').default,
     ].filter(Boolean),
     overrides: [
       isFlowEnabled && {
